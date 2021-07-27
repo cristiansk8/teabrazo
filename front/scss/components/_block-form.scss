@@ -1,0 +1,50 @@
+.block-form {
+  $self: &;
+
+  &--taxonomy {
+    #{$self}__wrapper {
+      background-color: $brand-white;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    &--png {
+      text-align: center;
+
+      img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &--jpg {
+      margin: 0;
+      min-height: rem(460px);
+
+      img {
+        @include coverAbsolute(1);
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    max-width: rem(570px);
+
+    @include from(l) {
+      padding-left: rem(30px);
+    }
+  }
+
+  &__tag {
+    @extend %tag;
+  }
+
+  &__title {
+    @extend %h1;
+    color: $grey;
+  }
+}

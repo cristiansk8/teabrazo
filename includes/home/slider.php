@@ -45,17 +45,6 @@
         <?php
         endwhile; ?>
     </div>
-    <div class="main-slider__pagination js_gn_carousel_controls container">
-      <div class="main-slider__pagination__arrows">
-        <div class="main-slider__pagination__prev js_gn_carousel__prev_arrow">
-          <span class="main-slider__pagination__prev-icon">arrow_back</span>
-        </div>
-        <div class="main-slider__pagination__next js_gn_carousel__next_arrow">
-          <span class="main-slider__pagination__next-icon">arrow_forward</span>
-        </div>
-      </div>
-      <div class="main-slider__pagination__dots js_gn_carousel__dots"></div>
-    </div>
   </section>
 <?php
 

@@ -1,0 +1,151 @@
+.main-menu {
+  box-shadow: 0 0 rem(10px) $grey-lt;
+
+  &__logo {
+    @include iconBg('../images/brand/logo.svg');
+    width: rem(260px);
+    height: rem(48px);
+
+    @include from(l) {
+      width: rem(323px);
+      height: rem(83px);
+    }
+  }
+
+  .menu-menu-principal-container {
+    margin-left: auto;
+  }
+  &__nav { 
+    > li {
+      @include from (l) {
+        margin-left: rem(60px);
+      }
+
+      .dropdown-menu {
+        background-color: $white;
+        border-radius: 0;
+        min-width: rem(270px);
+        
+        > li {
+          display: block;
+
+          a {
+            @extend %body;
+            display: block;
+            padding: rem(16px);
+
+            &:hover {
+              background-color: $brand-white;
+            }
+
+            @include from (l) {
+              padding: rem(25px) rem(50px);
+            }
+
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    color: $black;
+    padding: rem(16px);
+    text-align: center;
+
+    @include from(l) {
+      text-align: left;
+      padding: inherit;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+
+    @include from(l) {
+      flex-flow: row;
+    }
+
+    li {
+      display: block;
+      text-align: center;
+
+      @include from(l) {
+        flex: 1 1 0px;
+      }
+
+      a {
+        @extend %h3;
+        color: $grey;
+        display: block;
+        padding: rem(14px);
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:after {
+          @include center('horizontal');
+          content: '';
+          bottom: 0;
+          display: block;
+          height: rem(5px);
+          transition: height .35s ease-in-out;
+          width: 100%;
+          z-index: -1;
+        }
+
+        &:hover {
+          color: $white;
+
+          &:after {
+            height: 100%;
+          }
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          color: $white;
+
+          &:after {
+            height: 100%;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        a {
+          &:after {
+            background-color: $loctite;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          &:after {
+            background-color: $pattex;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          &:after {
+            background-color: $sista;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        a {
+          &:after {
+            background-color: $tangit;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.block-brands {
+  background-color: $brand-white;
+  padding-bottom: rem(20px);
+
+  @include from(l) {
+    padding-bottom: rem(40px);
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 rem(15px);
+  }
+}

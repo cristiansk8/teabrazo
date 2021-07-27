@@ -4,7 +4,8 @@
         the_content();
         ?>
     </div>
-      <?php
+    <div class="highligh__items">
+    <?php
         while(have_rows('icons')): the_row();
         ?>
         <div class="highligh__item">
@@ -16,4 +17,6 @@
         <?php
       endwhile;
          ?>
+    </div>
+
 </div>

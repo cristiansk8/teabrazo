@@ -1,0 +1,85 @@
+.main-slider {
+    position: relative;
+    &__item {
+        position: relative;
+    }
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+    &__caption {
+        @include center('vertical');
+        max-width: rem(620px);
+        left: 2%;
+        @include from(l) {
+            left: 10%;
+        }
+    }
+    &__title {
+        @extend %h1;
+        display: inline;
+        background-color: $red;
+        box-decoration-break: clone;
+        box-shadow: 0.5em 0 0 $red, -0.5em 0 0 $red;
+        color: $white;
+        line-height: rem(55px);
+    }
+    &__pagination {
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        @include center('horizontal');
+        &__arrows {
+            width: 38%;
+            @include from(l) {
+                width: 12%;
+            }
+        }
+        &__prev,
+        &__next {
+            display: inline-block;
+            background-color: $white;
+            padding: rem(13px);
+        }
+        &__next {
+            margin-left: rem(-5px);
+        }
+        &__prev-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/prev-grey.svg');
+        }
+        &__next-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/next-grey.svg');
+        }
+        &__dots {
+            width: 61%;
+            @include from(l) {
+                width: 87%;
+            }
+            .slick-dots {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    button {
+                        background-color: rgba($white, .5);
+                        border: none;
+                        border-radius: 100%;
+                        margin: 0 rem(5px);
+                        width: rem(12px);
+                        height: rem(12px);
+                        font-size: 0;
+                    }
+                    &.slick-active {
+                        button {
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

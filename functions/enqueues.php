@@ -49,8 +49,8 @@ wp_enqueue_script('waypoints-js');
 wp_register_script('counterup-js', get_template_directory_uri() . '/assets/js/vendors/counterup.js', false, null, true);
 wp_enqueue_script('counterup-js');
 
-wp_register_script('bst-js', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
-wp_enqueue_script('bst-js');
+wp_register_script('main2-js', get_template_directory_uri() . '/assets/js/theme.js', false, null, true);
+wp_enqueue_script('main2-js');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

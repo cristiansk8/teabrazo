@@ -25,13 +25,14 @@ if ($query->have_posts() ) : ?>
         ?>
       <div class="news__item col-md-4">
           <a href="<?php the_permalink(); ?>" class="d-block">
-          <div class="news__image image-ar image-ar--32" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+            <picture class="news__image image-ar image-ar--32">
+              <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            </pictute>
           </a>
-        </div>
         <div class="news__caption">
-          <h2 class="headline headline--4">
+          <h3 class="headline headline--4">
             <?php the_title(); ?>
-          </h2>
+          </h3>
           <a href="<?php the_permalink(); ?>" class="body body--bd">Saber más</a>
         </div>
       </div>

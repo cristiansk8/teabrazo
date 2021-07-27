@@ -1,0 +1,40 @@
+.posts-list {
+  background-color: $brand-white;
+  padding: rem(20px) 0 rem(40px);
+
+  @include from(l) {
+    padding: rem(40px) 0 rem(80px);
+  }
+
+  &__image {
+    height: rem(220px);
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+    img {
+      @include coverAbsolute(1);
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    padding: rem(20px);
+    left: 5%;
+    position: relative;
+    top: rem(-50px);
+    width: 90%;
+    z-index: 2;
+  }
+
+  &__title {
+    @extend %title-loop;
+  }
+
+  &__text {
+    p {
+      color: $grey;
+    }
+  }
+}

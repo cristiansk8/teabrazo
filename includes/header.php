@@ -14,19 +14,19 @@
 <div class="alert alert-wa_rning">
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
-<![endif]
+<![endif]-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-header">
     <div class="row-header">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-          <img src="<?php bloginfo('template_url')?>/img/icons/logo-instock_opt.png" alt="Instock"/>
+          <img src="<?php bloginfo('template_url')?>/img/icons/logo-white-COS.png" alt="teabrazo"/>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="navbar">
@@ -49,13 +49,7 @@
 							'walker'            => new wp_bootstrap_navwalker())
 					);
 			?>
-        <div class="follow">
-          <ul>
-            <li><a href="https://www.facebook.com/instockco/" class="social-icn fb" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/instockc/?igshid=26ez8nelumrh" class="social-icn in" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/in-stock/" class="social-icn lin" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
+
       </div><!-- /.navbar-collapse -->
     </div>
   </div><!-- /.container -->
