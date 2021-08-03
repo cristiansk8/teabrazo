@@ -1,0 +1,90 @@
+.block-banner {
+    background-color: $white;
+    padding: 0;
+    $self: &;
+  
+    &__image {
+      position: static;
+      display: block;
+      height: 100%;
+      padding: rem(50px) rem(100px);  
+    }
+  
+    &__content {
+      padding: rem(60px) rem(20px);
+      text-align: left;
+      justify-content: right;
+  
+      @include from(l) {
+        //max-width: rem(580px);
+        padding: rem(100px) rem(60px);
+      }
+    }
+  
+    &__tag {
+      @extend %tag;
+    }
+  
+    &__title {
+      @extend %h2;
+      color:$teabrazo-blue-2;
+      @include from(l) {
+        margin: rem(30px) 0 rem(25px);
+      }    
+    }
+  
+    &__text {
+      @extend %body;
+      color: $grey;
+      margin-bottom: rem(55px);
+      padding:rem(0px) rem(100px);
+    }
+  
+    &--dark {
+      background-color: $black;
+  
+      #{$self}__tag,
+      #{$self}__title,
+      #{$self}__text {
+        color: $white;
+      }
+    }
+  
+    &--cta {
+      position: relative;
+      padding: 0 rem(14px);
+  
+      &__image {
+        display: block;
+        width: 100%;
+        margin: 0;
+        min-height: rem(460px);
+        position: relative;
+  
+        @include from(l) {
+          min-height: rem(320px);
+        }
+  
+        img {
+          width: 100%;
+          @include coverAbsolute(1);
+          object-fit: cover;
+          object-position: right;
+        }
+      }
+  
+      &__caption {
+        @include center('both');
+        z-index: 1;
+      }
+  
+      &__subtitle {
+        @extend %h4;
+        color: $teabrazo-blue-2;
+        display: block;
+        margin-bottom: rem(20px);
+      }
+    }
+  }
+  
+  
