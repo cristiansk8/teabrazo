@@ -1,0 +1,43 @@
+.team {
+    background-color: $bone;
+
+    &__header {
+        @extend %h2;
+        color: $green;
+        text-align: center;
+    }
+
+    &__item {
+        background-color: $white;
+        padding: rem(36px);
+        border-radius: 50% 0 50%;
+
+        @include from(l) {
+            min-height: rem(527px);
+        }
+    }
+
+    &__photo {
+        border-radius: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        height: rem(238px);
+        width: rem(238px);
+        overflow: hidden;
+        
+        img {
+            @include coverAbsolute(1);
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        @extend %h4;
+        color: $blue;
+    }
+
+    &__text {
+        @extend %body;
+        color: $grey;
+    }
+}
