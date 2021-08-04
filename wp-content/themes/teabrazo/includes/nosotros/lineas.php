@@ -1,31 +1,21 @@
 <section id="lineas">
     <div class="lineas">
-            <div class="historia__highlight">
+            <div class="lineas__destacado">
                 <?php the_field('destacado') ?>
             </div>
+    <div class="lineas">
         <?php
             while(have_rows('items')): the_row();
             ?>
-            <div class="highligh__item">
-            <picture>
-                <img src="<?php the_sub_field('imagen') ?>" alt="">
-            </picture>
-            <p><?php the_sub_field('texto')?></p>
+            <div class="lineas__item col-lg-2">
+                <picture>
+                    <img src="<?php the_sub_field('imagen') ?>" alt="">
+                </picture>
+                <div class="lineas__text"><?php the_sub_field('texto')?>
+            </div>
             </div>
             <?php
         endwhile;
             ?>
     </div>
-</section>
-
-<section id="areas">
-<div class="banner-5050">
-        <div class="caption-title">
-                <?php the_field('titulo') ?>
-            </div>
-            <div class="caption-areas">
-                <?php the_field('areas') ?>
-            </div>
-
-        </div>
 </section>
