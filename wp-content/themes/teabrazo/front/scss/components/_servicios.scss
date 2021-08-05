@@ -1,0 +1,24 @@
+.servicios{
+    align-items: center;
+    padding-top: rem(50px);
+    
+    &__titulo {
+        color: $white;
+        position: absolute;
+        bottom: rem(300px);
+        left: rem(120px);
+    }
+
+    &__imagen {
+        max-height: rem(525px);
+        position: static;
+        align-content: center;
+    }
+
+    &__caption {
+        padding: rem(50px);
+        width: auto;
+        text-align: center;        
+    }
+          
+}

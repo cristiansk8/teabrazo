@@ -23,7 +23,7 @@
           <?php if ($ms_link) : ?>
             <a href="<?php echo $ms_link; ?>">
           <?php endif; ?>
-          <picture class="block-banner__image">          
+          <picture class="block-banner__image img-responsive">          
             <?php if ($ms_image) : ?>
               <img src="<?php the_sub_field('block_banner__image')?>" />
             <?php endif; ?>

@@ -17,8 +17,8 @@
 }
 
 %h4 {
-    font-family: $rg ;
-    font-size: rem(28px);
+    font-family: $mb ;
+    font-size: rem(40px);
 }
 
 %body {
@@ -81,6 +81,10 @@ h2 {
 
 h3 {
     @extend %h3;
+}
+
+h4 {
+    @extend %h4;
 }
 
 p,

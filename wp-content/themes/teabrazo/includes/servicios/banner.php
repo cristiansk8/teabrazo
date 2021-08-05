@@ -17,7 +17,7 @@
               <source media="(max-width: 799px)" srcset="<?php echo esc_url($ms_image_mobile['url']); ?>">
             <?php endif;?>
             <?php if ($ms_image) : ?>
-              <img src="<?php the_sub_field('main_slider__image')?>" alt="<?php echo esc_attr($ms_image['alt']); ?>"/>
+              <img class="img-responsive" src="<?php the_sub_field('main_slider__image')?>" />
             <?php endif; ?>
           </picture>
           <?php if ($ms_text) : ?>
