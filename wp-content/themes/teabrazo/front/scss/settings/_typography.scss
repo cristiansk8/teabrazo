@@ -2,13 +2,11 @@
 %h1 {
     font-family: $mb;
     font-size: rem(110px);
-    color: $white;
 }
 
 %h2 {
     font-family: $mb;
     font-size: rem(90px);
-    
 }
 
 %h3 {
@@ -17,23 +15,23 @@
 }
 
 %h4 {
-    font-family: $mb ;
+    font-family: $bd;
     font-size: rem(40px);
 }
 
 %body {
     font-family: $rg;
-    font-size: rem(24px);
+    font-size: rem(20px);
 }
 
 %body-m {
     font-family: $rg;
-    font-size: rem(20px);
+    font-size: rem(18px);
 }
 
 %body-s {
     font-family: $rg;
-    font-size: rem(16px);
+    font-size: rem(14px);
 }
 
 %body-xs {
@@ -81,10 +79,6 @@ h2 {
 
 h3 {
     @extend %h3;
-}
-
-h4 {
-    @extend %h4;
 }
 
 p,

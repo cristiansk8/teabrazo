@@ -27,7 +27,15 @@
             <?php endif;?>
             <?php if ($ms_image) : ?>
               <img src="<?php the_sub_field('main_slider__image')?>" alt="<?php echo esc_attr($ms_image['alt']); ?>"/>
-            <?php endif; ?>
+              
+              <div class="social">
+                <div>
+                  <div class="social-item">
+	                  <a href="https://wa.link/nzmt9m" target="_blank" class="whatsapp" aria-hidden="true"></a>
+                  </div>
+                </div>
+              </div>
+              <?php endif; ?>
           </picture>
           <?php if ($ms_text) : ?>
             <div class="main-slider__caption container">

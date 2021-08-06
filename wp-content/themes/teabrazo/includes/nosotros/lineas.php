@@ -7,12 +7,12 @@
         <?php
             while(have_rows('items')): the_row();
             ?>
-            <div class="lineas__item col-lg-2">
+            <div class="lineas__item col-lg-2 no-gutters">
                 <picture>
                     <img src="<?php the_sub_field('imagen') ?>" alt="">
                 </picture>
                 <div class="lineas__text"><?php the_sub_field('texto')?>
-            </div>
+                </div>
             </div>
             <?php
         endwhile;
