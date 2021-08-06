@@ -15,7 +15,7 @@
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
 <![endif]-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   <div class="container-header">
     <div class="row-header">
       <div class="navbar-header">
@@ -25,9 +25,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-          <img src="<?php bloginfo('template_url')?>/img/icons/logo-white-COS.png" alt="teabrazo"/>
-        </a>
       </div>
       <div class="collapse navbar-collapse" id="navbar">
         <?php
@@ -40,15 +37,6 @@
             );
         ?>
 
-			<?php
-					wp_nav_menu( array(
-							'theme_location'    => 'navbar-right',
-							'depth'             => 2,
-							'menu_class'        => 'nav navbar-nav navbar-right',
-							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-							'walker'            => new wp_bootstrap_navwalker())
-					);
-			?>
 
       </div><!-- /.navbar-collapse -->
     </div>
@@ -72,3 +60,5 @@ See also the accompanying CSS example in css/bst.css .
   </div>
 </div>
 -->
+
+

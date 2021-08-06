@@ -1,8 +1,8 @@
-<section>
+<section id="form-docs">
   <div class="form-banner row">
-      <div class="form-info col-md-6" style="background-image: url(http://teabrazocolombia.org/wp-content/uploads/2021/07/Imagen-formato.jpg)">
+      <div class="form-info col-md-6" style="background-image: url(http://teabrazocolombia.org/wp-content/uploads/2021/07/Imagen-formato-documentos.jpg)">
         <h2>
-            INSCRÍBETE
+            SOLICITUDES
         </h2>
         <div class="info-text">
         <p>

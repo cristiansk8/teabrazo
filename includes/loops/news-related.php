@@ -33,6 +33,9 @@ if ($query->have_posts() ) : ?>
           <h3 class="headline headline--4">
             <?php the_title(); ?>
           </h3>
+          <p>
+          <?php the_excerpt() ?>
+          </p>
           <a href="<?php the_permalink(); ?>" class="body body--bd">Saber más</a>
         </div>
       </div>

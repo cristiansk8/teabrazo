@@ -1,70 +1,54 @@
 .c-button {
-  background-color: $white;
-  border: rem(2px) solid $red;
-  border-radius: rem(60px);
-  display: block;
-  min-width: rem(234px);
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s ease-in;
-
-  $self: &;
-
-  @include from(l) {
-    display: inline-block;
-  }
-
-  &__content {
-    @extend %body-btn;
+    background-color: $white;
+    border: rem(2px) solid $red;
+    border-radius: rem(60px);
     display: block;
-    padding: rem(20px);
-  }
-
-  &:hover {
-    background-color: $red;
-    border-color: $red;
+    min-width: rem(234px);
+    text-align: center;
     text-decoration: none;
-
-    #{$self}__content {
-      color: $white;
+    transition: all .3s ease-in;
+    $self: &;
+    @include from(l) {
+        display: inline-block;
     }
-  }
-
-  &--primary {
-    background-color: $red;
-
-    #{$self}__content {
-      color: $white;
+    &__content {
+        @extend %body-btn;
+        display: block;
+        padding: rem(20px);
     }
-
     &:hover {
-      background-color: $white;
-      border-color: $white;
-      text-decoration: none;
-
-      #{$self}__content {
-        color: $red;
-      }
+        background-color: $red;
+        border-color: $red;
+        text-decoration: none;
+        #{$self}__content {
+            color: $white;
+        }
     }
-  }
+    &--primary {
+        background-color: $red;
+        #{$self}__content {
+            color: $white;
+        }
+        &:hover {
+            background-color: $white;
+            border-color: $white;
+            text-decoration: none;
+            #{$self}__content {
+                color: $red;
+            }
+        }
+    }
 }
 
 .wpcf7-submit {
-  @extend %body-btn;
-  background-color: $white;
-  border: rem(2px) solid $red;
-  border-radius: rem(60px);
-  color: $red;
-  display: block;
-  padding: rem(20px);
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s ease-in;
-  width: 100%;
-
-
-  &:hover {
+    font-family: $bd;
+    padding: rem(20px) rem(30px);
+    background-color: $blue;
     color: $white;
-    background-color: $red;
-  }
+    border-radius: 62px;
+    border: solid $blue;
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
 }

@@ -1,4 +1,13 @@
 <?php
+  /**
+   *
+   Main Slider -> main_slider
+    - Item Slider (repater) -> main_slider__item
+      - Imagen de fondo -> main_slider__image
+      - Imagen de fondo en mobile (opcional) -> main_slider__image_mobile
+      - Texto -> main_slider__body
+      - Vinculo -> main_slider__cta
+   */
 
    $main_slider = get_field('main_banner');
 

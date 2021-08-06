@@ -1,5 +1,10 @@
 <section id="voluntariados">
   <div class="container-voluntariados">
+  <div class="highlight">
+        <?php>
+        the_content();
+        ?>
+    </div>
     <div class="container-voluntariados">
         <?php
         while(have_rows('voluntariados')): the_row();
