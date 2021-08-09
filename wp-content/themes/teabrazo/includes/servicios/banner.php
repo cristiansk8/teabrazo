@@ -17,12 +17,12 @@
               <source media="(max-width: 799px)" srcset="<?php echo esc_url($ms_image_mobile['url']); ?>">
             <?php endif;?>
             <?php if ($ms_image) : ?>
-              <img class="img-responsive" src="<?php the_sub_field('main_slider__image')?>" />
+              <img src="<?php the_sub_field('main_slider__image')?>" alt="<?php echo esc_attr($ms_image['alt']); ?>"/>
             <?php endif; ?>
           </picture>
           <?php if ($ms_text) : ?>
-            <div class="main-slider__caption container">
-              <h3 class="main-slider__title"><?php echo $ms_text; ?></h3>
+            <div class="main-slider__caption container  <?php the_sub_field('color')?>">
+             <?php echo $ms_text; ?>
             </div>
           <?php endif; ?>
         </div>

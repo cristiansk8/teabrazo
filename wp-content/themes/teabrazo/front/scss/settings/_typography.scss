@@ -11,17 +11,13 @@
 
 %h3 {
     font-family: $bd;
-    font-size: rem(50px);
-}
-
-%h4 {
-    font-family: $bd;
-    font-size: rem(40px);
+    font-size: rem(25px);
 }
 
 %body {
     font-family: $rg;
-    font-size: rem(20px);
+    font-size: rem(25px);
+    color: $gray-dark;
 }
 
 %body-m {

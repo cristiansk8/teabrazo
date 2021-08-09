@@ -116,3 +116,4 @@ function wpn_aliados() {
 add_action( 'init', 'wpn_aliados', 0 );
 
 }
+

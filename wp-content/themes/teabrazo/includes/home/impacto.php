@@ -3,7 +3,7 @@
 
 ?>
 <div class="impact">
-    <div class="block-banner container-fluid no-gutters">
+    <div class="container-fluid no-gutters">
         <div class="block-banner--ipact row g-0">
             <div class="col-lg-5 left">
                 <figure>

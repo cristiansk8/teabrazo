@@ -1,7 +1,40 @@
 .main-slider {
+    margin-top: 72px;
     position: relative;
     &__item {
         position: relative;
+        .Blanco {
+            h1 {
+                color: $white;
+                font-size: rem(50px);
+                @include from(l) {
+                    font-size: rem(110px);
+                }
+            }
+            p {
+                @include from(l) {
+                    font-size: rem(70px);
+                }
+                font-size: rem(35px);
+                color: $white;
+            }
+        }
+        .Azul {
+            h1 {
+                color: $blue;
+                font-size: rem(50px);
+                @include from(l) {
+                    font-size: rem(110px);
+                }
+            }
+            p {
+                @include from(l) {
+                    font-size: rem(40px);
+                }
+                font-size: rem(35px);
+                color: $blue;
+            }
+        }
     }
     &__image {
         img {
@@ -9,21 +42,18 @@
         }
     }
     &__caption {
-        @include center('vertical');
-        max-width: rem(620px);
+        max-width: 52rem;
+        left: 2%;
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        max-width: 52rem;
         left: 2%;
         @include from(l) {
             left: 10%;
+            text-align: center;
+            @include center('vertical');
         }
-    }
-    &__title {
-        @extend %h1;
-        display: inline;
-        background-color: $red;
-        box-decoration-break: clone;
-        box-shadow: 0.5em 0 0 $red, -0.5em 0 0 $red;
-        color: $white;
-        line-height: rem(55px);
     }
     &__pagination {
         bottom: 0;
@@ -78,6 +108,31 @@
                             background-color: $white;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+#slider {
+    .container-slider {
+        padding: rem(60px);
+        .item {
+            figure {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .titulo {
+                h4 {
+                    background: #4fad3cb3;
+                    text-align: right;
+                    padding: 20px;
+                    margin-top: -80px;
+                    color: $white;
+                    position: absolute;
+                    @extend %h2;
                 }
             }
         }

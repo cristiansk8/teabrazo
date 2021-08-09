@@ -1,17 +1,27 @@
-.block-brands {
-  background-color: $brand-white;
-  padding-bottom: rem(20px);
-
-  @include from(l) {
+.aliados {
+    background-image: url('../images/bg/fondo-aliados.png');
+    background-size: cover;
     padding-bottom: rem(40px);
-  }
-
-  &__wrapper {
-    text-align: center;
-  }
-
-  &__item {
-    display: inline-block;
-    margin: 0 rem(15px);
-  }
+    header {
+        text-align: center;
+        h2 {
+            color: $blue;
+        }
+    }
+    .aliados-content {
+        display: flex;
+        flex-wrap: wrap;
+        .alidados__item {
+            padding: rem(90px);
+            .news__image {
+                border-radius: 50%;
+                box-shadow: -9px 8px 0 0px $blue;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
 }

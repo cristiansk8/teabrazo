@@ -34,8 +34,8 @@
             <?php endif; ?>
           </picture>
           <?php if ($ms_text) : ?>
-            <div class="main-slider__caption container">
-              <?php echo $ms_text; ?>
+            <div class="main-slider__caption container  <?php the_sub_field('color')?>">
+             <?php echo $ms_text; ?>
             </div>
           <?php endif; ?>
           <?php if ($ms_link) : ?>

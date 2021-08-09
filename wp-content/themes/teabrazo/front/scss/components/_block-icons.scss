@@ -1,8 +1,10 @@
 .banner-items {
+    text-align: center;
     .highlight {
-        text-align: center;
-        padding: rem(20px) rem(200px);
-        background-color: $teabrazo-blue-2;
+        padding: rem(20px) rem(100px);
+        @include from(l) {
+            padding: rem(20px) rem(500px);
+        }
     }
     padding-bottom: rem(25px);
     .highligh__items {
@@ -14,7 +16,11 @@
             width: 100%;
             text-align: center;
             @include from(l) {
-                width: 30%;
+                width: 33.3%;
+            }
+            p {
+                color: $blue;
+                padding: 20px;
             }
         }
     }

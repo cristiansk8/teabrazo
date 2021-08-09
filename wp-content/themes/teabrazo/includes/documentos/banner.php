@@ -27,19 +27,11 @@
             <?php endif;?>
             <?php if ($ms_image) : ?>
               <img src="<?php the_sub_field('main_slider__image')?>" alt="<?php echo esc_attr($ms_image['alt']); ?>"/>
-              
-              <div class="social">
-                <div>
-                  <div class="social-item">
-	                  <a href="https://wa.link/nzmt9m" target="_blank" class="whatsapp" aria-hidden="true"></a>
-                  </div>
-                </div>
-              </div>
-              <?php endif; ?>
+            <?php endif; ?>
           </picture>
           <?php if ($ms_text) : ?>
-            <div class="main-slider__caption container">
-              <h3 class="main-slider__title"><?php echo $ms_text; ?></h3>
+            <div class="main-slider__caption container  <?php the_sub_field('color')?>">
+             <?php echo $ms_text; ?>
             </div>
           <?php endif; ?>
         </div>

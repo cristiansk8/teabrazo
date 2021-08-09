@@ -1,15 +1,19 @@
 <?php 	get_template_part('includes/header');?>
 
 <div class="container-single">
+
   <div class="row">
     <div class="col-md-12">
       <figure class="text-center">
-            <img src="<?php the_post_thumbnail_url();?>" alt="cos-consulting-blog">
+            <img src="<?php the_field('banner');?>" alt="teabrazo-blog">
       </figure>
     </div>
     <div class="container-single-content">
+    <div class="col-md-12 text-left">
+    <a href="/blog"> < Volver</a>
+  </div>
       <div id="content" role="main" class="col-md-8 col-sm-8">
-        <div class="caption container">
+        <div class="caption ">
           <h1 class="headline headline--4">
             <?php the_title(); ?>
           </h1>

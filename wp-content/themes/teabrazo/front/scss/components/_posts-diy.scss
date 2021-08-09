@@ -1,142 +1,89 @@
-.posts-diy {
-  background-color: $brand-white;
-  padding: rem(20px) 0 rem(40px);
-
-  @include from(l) {
-    padding: rem(40px) 0 rem(80px);
-  }
-
-  &__wrapper {
-    position: relative;
-  }
-
-  &__item {
-    box-shadow: 0 0 rem(10px) $grey-lt;
-    position: relative;
-  }
-
-  &__heading {
-    padding: 0 rem(10px) rem(16px);
-
-    h2 {
-      @extend %h1;
-      color: $grey;
-    }
-  }
-
-  &__image {
-    height: rem(220px);
-    margin: 0;
-    position: relative;
-    width: 100%;
-
-    img {
-      @include coverAbsolute(1);
-      object-fit: cover;
-    }
-  }
-
-  &__content {
-    background-color: $white;
-    padding: rem(20px);
-    position: relative;
-
-    @include from(l) {
-      min-height: rem(220px);
-    }
-  }
-
-  &__title {
-    @extend %h3;
-    color: $grey;
-  }
-
-  &__text {
-    p {
-      color: $grey;
-    }
-  }
-
-  .slick-list,
-  .slick-track {
-    width: 100%;
-    margin: 0;
-  }
-
-  .slick-slide {
-    padding: 0 rem(10px) rem(16px);
-  }
-
-  &__pagination {
-    &__prev,
-    &__next {
-      @include center('vertical');
-      cursor: pointer;
-
-      span {
-        background-color: $red;
-        border-radius: 100%;
-        display: block;
-        height: rem(44px);
-        width: rem(44px);
-        position: relative;
-
-        &:after {
-          @include center('both');
-          content: '';
-          display: block;
-          height: rem(20px);
-          width: rem(18px);
-        }
-      }
-    }
-
-    &__prev {
-      left: rem(-10px);
-
-      span {
-        &:after {
-          @include iconBg('../images/icons/prev-white.svg');
-        }
-      }
-    }
-
-    &__next {
-      right: rem(-10px);
-
-      span {
-        &:after {
-          @include iconBg('../images/icons/next-white.svg');
-        }
-      }
-    }
-
-    &__dots {
-
-      .slick-dots {
-        padding: 0;
-        text-align: center;
-
-        li {
-          display: inline-block;
-
-          button {
-            background-color: rgba($red, .5);
-            border: none;
-            border-radius: 100%;
-            margin: 0 rem(5px);
-            width: rem(12px);
-            height: rem(12px);
-            font-size: 0;
-          }
-
-          &.slick-active {
-            button {
-              background-color: $red;
+.container-single {
+    .col-md-12 {
+        figure {
+            img {
+                width: 100%;
+                height: auto;
             }
-          }
         }
-      }
     }
-  }
+    .container-single-content {
+        padding: rem(20px) rem(50px);
+        @include from(l) {
+            padding: rem(20px) rem(100px);
+        }
+        h1 {
+            font-size: rem(90px);
+            text-align: center;
+            color: $blue;
+        }
+        .text-left {
+            padding: rem(20px) rem(30px);
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $yellow;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $yellow;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    padding: rem(20px) rem(50px);
+    @include from(l) {
+        border-left: 4px solid $fondo2;
+        padding: rem(20px) rem(100px);
+    }
+    .widget_recent_entries {
+        .posts-sidebar {
+            .home-news {
+                margin: rem(10px) rem(10px) rem(86px) rem(10px);
+            }
+        }
+        text-align: center;
+        h4 {
+            font-family: $mb;
+            font-size: rem(50px);
+            color: $blue;
+            padding: rem(45px);
+        }
+        .box_news_small {
+            a {
+                @extend %body;
+                color: $blue;
+            }
+        }
+        .box_bg {
+            a {
+                picture {
+                    img {
+                        width: 100%;
+                        height: auto;
+                        padding: rem(20px);
+                    }
+                }
+            }
+        }
+        .link_news {
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $blue;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $blue;
+                    border: 1px solid $blue
+                }
+            }
+        }
+    }
 }

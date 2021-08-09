@@ -1,43 +1,55 @@
-.form-item {
-  padding-bottom: rem(20px);
-
-  &__label {
-    @extend %h3;
-    color: $grey;
-  }
-
-  &__text {
-    input {
-      @extend %body;
-      border: rem(2px) solid rgba($grey, .4);
-      border-radius: rem(16px);
-      display: block;
-      margin-top: rem(12px);
-      width: 100%;
-      padding: rem(10px) rem(16px);
+.form-banner {
+    .form-info {
+        min-height: 64rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60rem;
+        h2 {
+            margin-top: -30px;
+            margin-left: 40px;
+            background-color: $blue;
+            color: $white;
+            width: fit-content;
+            padding: 10px 20px;
+        }
+        .info-text {
+            margin-top: 22%;
+            color: $white;
+            padding: 0 20%;
+            p {
+                font-size: rem(35px);
+                color: $white
+            }
+        }
     }
-  }
-
-  &__textarea {
-    textarea {
-      @extend %body;
-      border: rem(2px) solid rgba($grey, .4);
-      border-radius: rem(16px);
-      display: block;
-      margin-top: rem(12px);
-      width: 100%;
-      height: rem(110px);
-      padding: rem(10px) rem(16px);
+    .cifras-banner-form {
+        background-color: $gray-lt;
     }
-  }
+}
 
-  &__accept {
-    .wpcf7-list-item {
-      margin-left: 0;
-      @extend %body-xs;
-      color: $grey;
-      display: block;
-      margin-bottom: rem(8px);
+#form-docs {
+    min-height: 64rem;
+    .form-info {
+        min-height: 60rem;
+        background-color: $gray-lt;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60rem;
+        h2 {
+            margin-top: -30px;
+            margin-left: 40px;
+            background-color: $green;
+            color: $white;
+            width: fit-content;
+            padding: 10px 20px;
+        }
+        .info-text {
+            margin-top: 22%;
+            color: $white;
+            padding: 0 20%;
+            p {
+                font-size: rem(35px);
+            }
+        }
     }
-  }
 }
