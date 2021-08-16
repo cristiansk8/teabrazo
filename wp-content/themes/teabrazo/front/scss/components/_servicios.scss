@@ -1,23 +1,28 @@
 .servicios{
     align-items: center;
     padding-top: rem(50px);
-    
+    margin-right:rem(150px);   
     &__titulo {
         color: $white;
         position: absolute;
         bottom: rem(300px);
         left: rem(120px);
+        h4 {
+            color: $blue;
+            margin-left:rem(800px);
+            font-family: $mb;
+        }
     }
 
     &__imagen {
-        max-height: rem(525px);
+        max-width: rem(100px);
         position: static;
         align-content: center;
     }
 
     &__caption {
         padding: rem(50px);
-        width: auto;
+        max-width: auto;
         text-align: center;        
     }
           
