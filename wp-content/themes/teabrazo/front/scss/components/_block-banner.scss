@@ -1,33 +1,31 @@
 .block-banner {
+   
+    width: 90%;
     background-color: $white;
-    padding: 0;
     $self: &;
+
     &__image {
         position: static;
         display: block;
         height: 100%;
-        padding: rem(50px) rem(100px);
+        padding-top: rem(100px);
         img {
             width: 100%;
             height: auto;
         }
     }
     &__content {
-        margin-top: rem(150px);
-        margin-right: rem(55px);
-        text-align: left;
-        justify-content: right;
+        margin-top: rem(100px);      
         
         h2 {
             color: $blue;
-            margin-right:0;
+            text-align: center;
         }
 
         p {
-            color: $grey;
-            margin-right:0;
-            padding-left: rem(50px);
-            padding-right: rem(400px);
+            color: $grey;            
+            padding-left: rem(100px);
+            padding-right: rem(100px);
         }
     }
     &__tag {
@@ -453,8 +451,7 @@
         }
         img {
             width: 100%;
-            @include coverAbsolute(1);
-            //object-position: right;
+            @include coverAbsolute(1);            
         }
     }
 }

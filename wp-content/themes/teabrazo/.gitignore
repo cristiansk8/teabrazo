@@ -18,6 +18,7 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
+/wp-content/themes/teabrazo/assets/css/theme.css
 
 # Configuration
 wp-config.php
