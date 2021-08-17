@@ -1,0 +1,30 @@
+.lineas{
+   
+    
+    &__item {
+        //margin-bottom: rem(16px);
+        background-color: $teabrazo-blue-2;
+        position: relative;
+        
+    }
+  
+    &__destacado {
+        color: $white;
+        margin-top: rem(55px);
+        padding:rem(25px);
+        text-align: center;
+        background-color: $teabrazo-blue-2;
+        font-weight: bold;
+    }
+  
+    &__text {
+        @extend %body;
+        color: $white;
+        margin-top: rem(25px);
+        padding:rem(25px);
+        text-align: center;
+        background-color: $teabrazo-blue-2;
+        height: rem(150px);
+    }
+
+}
